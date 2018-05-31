@@ -20,8 +20,13 @@ with open('temp.csv', 'wb') as handle:
         handle.write(block)
 with open("temp.csv", "r",encoding='iso-8859-1') as inp, open("namesToCheckAgainst.csv", "w",encoding='iso-8859-1') as out:
     lines = inp.readlines()
+    skip =True
     for li in lines:
-        sp = li.split(',')
-        stw=sp[0]+','+sp[1]+'\n'
-        out.write(stw)
+        if skip:
+            skip=False
+            continue
+        else:
+            sp = li.split(',')
+            stw=sp[0]+','+sp[1]+'\n'
+            out.write(stw)
 os.remove("temp.csv")
