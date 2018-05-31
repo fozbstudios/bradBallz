@@ -1,0 +1,17 @@
+fetch(http://www.brooksbaseball.net/h_landing.php?player=545361)
+fetch('http://www.brooksbaseball.net/h_landing.php?player=545361')
+response.css('.landing-well::href').extractFirst()
+response.css('.landing-well').extractFirst()
+response.css('.landing-well').extract()
+response.css('.landing-well::text').extract()
+response.css('.landing-well::text').extractFirst()
+response.css('.landing-well').extract_first()
+response.css('.landing-well::href').extract_first()
+response.css('.landing-well::attr(href)').extract_first()
+s= 'brooksbaseball.net'+response.css('.landing-well::attr(href)').extract_first()
+s
+s= 'brooksbaseball.net/'+response.css('.landing-well::attr(href)').extract_first()
+s
+%save
+import readline
+readline.write_history_file('lol')
