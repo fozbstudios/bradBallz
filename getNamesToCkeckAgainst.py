@@ -21,7 +21,9 @@ with open('temp.csv', 'wb') as handle:
 with open("temp.csv", "r",encoding='iso-8859-1') as inp, open("namesToCheckAgainst.csv", "w",encoding='iso-8859-1') as out:
     lines = inp.readlines()
     skip =True
-    for li in lines:
+    # for li in lines:
+    for i in range(0,10):
+        li = lines[i]
         if skip:
             skip=False
             continue
@@ -30,3 +32,4 @@ with open("temp.csv", "r",encoding='iso-8859-1') as inp, open("namesToCheckAgain
             stw=sp[0]+','+sp[1]+'\n'
             out.write(stw)
 os.remove("temp.csv")
+os.rename('namesToCheckAgainst.csv','bradBallz/bradBallz/namesToCheckAgainst.csv')
