@@ -23,5 +23,22 @@ class BrooksbaseballSpider(scrapy.Spider):
             yield scrapy.Request(url=rLink, meta={'checkName':name,'fNameNoExt':'rightOut'},callback=self.parse)
             yield scrapy.Request(url=bLink, meta={'checkName':name,'fNameNoExt':'bothOut'},callback=self.parse)
     def parse(self, response):
-        print(response.url)
-        print(response.meta['checkName'])
+        header = []
+        header+=response.meta['checkName']
+        header+='!NEW_PLAYER!'
+        parsedTitle=response.xpath('//title/text()').extract_first()[13:]#strips 'Player Card: ' from page tile leavingf only name
+        header+=parsedTitle
+        header+=getHeaderList(response)
+        
+        with open(response.meta['fNameNoExt']+".csv", "a",encoding='iso-8859-1') as out: #append
+            out.write(','.join(header)+'\n')
+            for row in getTableData(response):
+                out.write(',,,'+','.join(row)+'\n') #,,, for 3 empyty csv cells to nest propperly under header
+
+        # print(response.url)
+        # print(response.meta['checkName'])
+    def getHeaderList(response):
+        """returns list containing text of stats tablr <th> elems"""
+
+    def getTableData(response):
+        """returns 2d list containing text of stats tablr <td> elems"""
