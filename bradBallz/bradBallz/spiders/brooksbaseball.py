@@ -41,21 +41,26 @@ class BrooksbaseballSpider(scrapy.Spider):
         """returns 2d list containing text of stats tablr <td> elems"""
         ret =[]
         for row in response.xpath('//table/thead//tr')[1:]: #skip table header
-            ret.append(row.xpath('.//b/text()').extract())
-            ret+=row.xpath('.//td/text()').extract()
+            retRow=[]
+            retRow.append(row.xpath('.//*/font/text()|.//*/b/text()').extract_first())
+            retRow+=row.xpath('.//td/text()').extract()
+            ret.append(retRow)
+            # print(ret)
         return ret;
     def parse(self, response):
         header = []
         header.append('!NEW_PLAYER!')
-        header.append(response.meta['checkName'])
+        header.append(response.url)
+        # header.append(response.meta['checkName'])
         parsedTitle=response.xpath('//title/text()').extract_first()[13:]#strips 'Player Card: ' from page tile leavingf only name
         header.append(parsedTitle)
         header+=self.getHeaderList(response)
-        
+
         with open(response.meta['fNameNoExt']+".csv", "a",encoding='iso-8859-1') as out: #append
             out.write(','.join(header)+'\n')
             for row in self.getTableData(response):
-                 out.write(',,,'+','.join(row)+'\n') #,,, for 3 empyty csv cells to nest propperly under header
+                # out.write(',,'+','.join(row)+'\n') #,,, for 3 empyty csv cells to nest propperly under header
+                out.write(',,,'+','.join(row)+'\n') #,,, for 3 empyty csv cells to nest propperly under header
 
         # print(response.url)
         # print(response.meta['checkName'])
