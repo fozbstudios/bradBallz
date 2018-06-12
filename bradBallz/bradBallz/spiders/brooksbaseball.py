@@ -39,6 +39,7 @@ class BrooksbaseballSpider(scrapy.Spider):
         # print(response.meta['checkName'])
     def getHeaderList(response):
         """returns list containing text of stats tablr <th> elems"""
+        return response.xpath('//table/thead//th/text()').extract()
 
     def getTableData(response):
         """returns 2d list containing text of stats tablr <td> elems"""
