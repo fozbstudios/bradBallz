@@ -32,4 +32,4 @@ with open("temp.csv", "r",encoding='iso-8859-1') as inp, open("namesToCheckAgain
             stw=sp[0]+','+sp[1]+'\n'
             out.write(stw)
 os.remove("temp.csv")
-os.rename('namesToCheckAgainst.csv','bradBallz/bradBallz/namesToCheckAgainst.csv')
+os.rename('namesToCheckAgainst.csv','bradBallz/namesToCheckAgainst.csv')
