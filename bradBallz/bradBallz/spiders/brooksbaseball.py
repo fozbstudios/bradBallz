@@ -41,7 +41,8 @@ class BrooksbaseballSpider(scrapy.Spider):
         """returns 2d list containing text of stats tablr <td> elems"""
         ret =[]
         for row in response.xpath('//table/thead//tr')[1:]: #skip table header
-            ret+=row.xpath('.//b/text()').extract()+row.xpath('.//td/text()').extract()
+            ret.append(row.xpath('.//b/text()').extract())
+            ret+=row.xpath('.//td/text()').extract()
         return ret;
     def parse(self, response):
         header = []
@@ -53,8 +54,8 @@ class BrooksbaseballSpider(scrapy.Spider):
         
         with open(response.meta['fNameNoExt']+".csv", "a",encoding='iso-8859-1') as out: #append
             out.write(','.join(header)+'\n')
-            # for row in self.getTableData(response):
-                # out.write(',,,'+','.join(row)+'\n') #,,, for 3 empyty csv cells to nest propperly under header
+            for row in self.getTableData(response):
+                 out.write(',,,'+','.join(row)+'\n') #,,, for 3 empyty csv cells to nest propperly under header
 
         # print(response.url)
         # print(response.meta['checkName'])
