@@ -43,3 +43,7 @@ class BrooksbaseballSpider(scrapy.Spider):
 
     def getTableData(response):
         """returns 2d list containing text of stats tablr <td> elems"""
+        ret =[]
+        for row in response.xpath('//table/thead//tr')[1:]: #skip table header
+            ret+=row.xpath('.//b/text()').extract()+row.xpath('.//td/text()').extract()
+        return ret;
