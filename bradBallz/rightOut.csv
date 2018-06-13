@@ -17,12 +17,12 @@
 ,,,Knuckler,2,0,0,0,0,0,0,0,0,.000,.000,.000,.000
 ,,,Slow Curve,3,1,1,0,0,0,0,0,0,.000,.000,.000,.000
 !NEW_PLAYER!,http://www.brooksbaseball.net/h_tabs.php?player=405395&balls=-1&strikes=-1&b_hand=R&time=month&minmax=ci&var=ra&s_type=2&gFilt=&startDate=&endDate=,Albert Pujols,Pitch Type,Count,AB,K,BB,HBP,1B,2B,3B,HR,BAA,SLG,ISO,BABIP
-,,,Fourseam,6446,1,619,130,142,14,284,101,1,117,.311,.591,.280,.281
-,,,Sinker,4130,1,062,89,88,16,229,61,1,53,.324,.533,.209,.316
-,,,Change,1194,261,39,22,5,42,14,1,12,.264,.464,.199,.271
-,,,Slider,3757,860,178,66,3,141,29,1,31,.235,.379,.144,.263
+,,,Fourseam,6450,1620,130,142,14,284,101,1,117,.311,.591,.280,.281
+,,,Sinker,4135,1063,89,88,16,229,61,1,53,.324,.533,.209,.316
+,,,Change,1195,262,39,22,5,42,14,1,12,.263,.462,.199,.270
+,,,Slider,3762,861,178,66,3,141,29,1,31,.235,.379,.144,.262
 ,,,Curve,2120,349,108,30,4,48,16,0,9,.209,.332,.123,.276
-,,,Cutter,1452,372,28,29,1,68,18,0,25,.298,.548,.250,.270
+,,,Cutter,1453,373,29,29,1,68,18,0,25,.298,.547,.249,.270
 ,,,Split,518,121,30,5,2,12,10,0,6,.231,.463,.231,.259
 ,,,Knuckler,108,23,3,3,0,2,1,0,2,.217,.522,.304,.167
 ,,,Slow Curve,23,5,0,0,0,1,0,0,1,.400,1.000,.600,.250
@@ -36,6 +36,16 @@
 ,,,Split,81,22,3,1,0,3,1,1,0,.227,.364,.136,.263
 ,,,Knuckler,23,10,1,0,0,3,0,0,0,.300,.300,.000,.333
 ,,,Slow Curve,3,1,0,0,0,0,0,0,0,.000,.000,.000,.000
+!NEW_PLAYER!,http://www.brooksbaseball.net/h_tabs.php?player=134181&balls=-1&strikes=-1&b_hand=R&time=month&minmax=ci&var=ra&s_type=2&gFilt=&startDate=&endDate=,Adrian Beltre,Pitch Type,Count,AB,K,BB,HBP,1B,2B,3B,HR,BAA,SLG,ISO,BABIP
+,,,Fourseam,6038,1612,194,91,15,302,97,5,75,.297,.503,.206,.301
+,,,Sinker,4061,1026,80,59,14,227,64,0,41,.324,.506,.182,.322
+,,,Change,1041,230,52,13,4,38,14,0,9,.265,.444,.178,.308
+,,,Slider,3620,851,159,37,3,153,38,1,36,.268,.442,.174,.293
+,,,Curve,1591,412,78,10,0,62,24,2,18,.257,.456,.199,.279
+,,,Cutter,1361,341,39,17,1,73,17,2,17,.320,.531,.211,.323
+,,,Split,362,80,17,9,1,15,5,1,1,.275,.400,.125,.339
+,,,Knuckler,121,31,7,3,0,3,0,0,1,.129,.226,.097,.130
+,,,Slow Curve,12,5,3,0,1,0,0,0,0,.000,.000,.000,.000
 !NEW_PLAYER!,http://www.brooksbaseball.net/h_tabs.php?player=424325&balls=-1&strikes=-1&b_hand=R&time=month&minmax=ci&var=ra&s_type=2&gFilt=&startDate=&endDate=,David Ross,Pitch Type,Count,AB,K,BB,HBP,1B,2B,3B,HR,BAA,SLG,ISO,BABIP
 ,,,Fourseam,1654,323,118,51,3,36,19,0,16,.220,.427,.207,.291
 ,,,Sinker,801,173,31,26,1,36,13,0,5,.312,.474,.162,.358
@@ -46,16 +56,6 @@
 ,,,Split,56,12,8,2,0,1,1,0,0,.167,.250,.083,.500
 ,,,Knuckler,35,12,3,1,0,2,0,0,0,.167,.167,.000,.222
 ,,,Slow Curve,3,2,1,0,0,0,0,0,0,.000,.000,.000,.000
-!NEW_PLAYER!,http://www.brooksbaseball.net/h_tabs.php?player=134181&balls=-1&strikes=-1&b_hand=R&time=month&minmax=ci&var=ra&s_type=2&gFilt=&startDate=&endDate=,Adrian Beltre,Pitch Type,Count,AB,K,BB,HBP,1B,2B,3B,HR,BAA,SLG,ISO,BABIP
-,,,Fourseam,6037,1,611,194,91,15,302,97,5,75,.297,.503,.206,.301
-,,,Sinker,4061,1,026,80,59,14,227,64,0,41,.324,.506,.182,.322
-,,,Change,1041,230,52,13,4,38,14,0,9,.265,.444,.178,.308
-,,,Slider,3618,851,159,37,3,153,38,1,36,.268,.442,.174,.293
-,,,Curve,1591,412,78,10,0,62,24,2,18,.257,.456,.199,.279
-,,,Cutter,1361,341,39,17,1,73,17,2,17,.320,.531,.211,.323
-,,,Split,362,80,17,9,1,15,5,1,1,.275,.400,.125,.339
-,,,Knuckler,121,31,7,3,0,3,0,0,1,.129,.226,.097,.130
-,,,Slow Curve,12,5,3,0,1,0,0,0,0,.000,.000,.000,.000
 !NEW_PLAYER!,http://www.brooksbaseball.net/h_tabs.php?player=346795&balls=-1&strikes=-1&b_hand=R&time=month&minmax=ci&var=ra&s_type=2&gFilt=&startDate=&endDate=,Endy Chavez,Pitch Type,Count,AB,K,BB,HBP,1B,2B,3B,HR,BAA,SLG,ISO,BABIP
 ,,,Fourseam,1616,334,28,27,1,70,24,3,9,.317,.488,.171,.327
 ,,,Sinker,1217,321,15,14,0,81,12,2,0,.296,.346,.050,.311

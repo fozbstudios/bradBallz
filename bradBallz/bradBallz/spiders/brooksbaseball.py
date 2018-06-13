@@ -43,7 +43,7 @@ class BrooksbaseballSpider(scrapy.Spider):
         for row in response.xpath('//table/thead//tr')[1:]: #skip table header
             retRow=[]
             retRow.append(row.xpath('.//*/font/text()|.//*/b/text()').extract_first())
-            retRow+=row.xpath('.//td/text()').extract()
+            retRow+=[st.replace(',','') for st in row.xpath('.//td/text()').extract()]
             ret.append(retRow)
             # print(ret)
         return ret;
