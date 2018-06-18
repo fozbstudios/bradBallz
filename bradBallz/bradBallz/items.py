@@ -9,6 +9,6 @@ import scrapy
 
 
 class BradballzItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+    url = scrapy.Field()
+    fileNmae = scrapy.Field()
+    data = scrapy.Field()
