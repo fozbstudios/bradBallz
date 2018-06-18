@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import scrapy
+from bradBallz.items import BradballzItem
 class BrooksbaseballSpider(scrapy.Spider):
     name = 'brooksbaseball'
     allowed_domains = ['http://www.brooksbaseball.net']
@@ -48,19 +49,22 @@ class BrooksbaseballSpider(scrapy.Spider):
             # print(ret)
         return ret;
     def parse(self, response):
+        item = BradballzItem()
         header = []
         header.append('!NEW_PLAYER!')
         header.append(response.url)
+        item['url'] = response.url
+        item['fileName'] = response.meta['fNameNoExt']+".csv"
+        item['lineDict'] = []
         # header.append(response.meta['checkName'])
         parsedTitle=response.xpath('//title/text()').extract_first()[13:]#strips 'Player Card: ' from page tile leavingf only name
         header.append(parsedTitle)
         header+=self.getHeaderList(response)
 
-        with open(response.meta['fNameNoExt']+".csv", "a",encoding='iso-8859-1') as out: #append
-            out.write(','.join(header)+'\n')
-            for row in self.getTableData(response):
-                # out.write(',,'+','.join(row)+'\n') #,,, for 3 empyty csv cells to nest propperly under header
-                out.write(',,,'+','.join(row)+'\n') #,,, for 3 empyty csv cells to nest propperly under header
-
+        item['lineDict'].append(','.join(header)+'\n')
+        for row in self.getTableData(response):
+            # out.write(',,'+','.join(row)+'\n') #,,, for 3 empyty csv cells to nest propperly under header
+            item['lineDict'].append(',,,'+','.join(row)+'\n') #,,, for 3 empyty csv cells to nest propperly under header
+        yield item
         # print(response.url)
         # print(response.meta['checkName'])

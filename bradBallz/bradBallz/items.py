@@ -11,4 +11,4 @@ import scrapy
 class BradballzItem(scrapy.Item):
     url = scrapy.Field()
     fileNmae = scrapy.Field()
-    data = scrapy.Field()
+    lineDict = scrapy.Field()
