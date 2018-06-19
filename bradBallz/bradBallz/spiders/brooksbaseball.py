@@ -3,7 +3,7 @@ import scrapy
 from bradBallz.items import BradballzItem
 class BrooksbaseballSpider(scrapy.Spider):
     name = 'brooksbaseball'
-    allowed_domains = ['http://www.brooksbaseball.net']
+    allowed_domains = ['brooksbaseball.net']
     lURLs = []
     rURLs = []
     bURLs = []
