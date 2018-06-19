@@ -65,6 +65,7 @@ class BrooksbaseballSpider(scrapy.Spider):
         for row in self.getTableData(response):
             # out.write(',,'+','.join(row)+'\n') #,,, for 3 empyty csv cells to nest propperly under header
             item['lineDict'].append(',,,'+','.join(row)+'\n') #,,, for 3 empyty csv cells to nest propperly under header
+        item['lineDict'].append(',,,\n') #to sperate entries
         yield item
         # print(response.url)
         # print(response.meta['checkName'])
