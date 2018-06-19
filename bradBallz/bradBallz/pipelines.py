@@ -8,7 +8,7 @@
 
 class BradballzPipeline(object):
     def process_item(self, item, spider):
-         with open(item['fileName'], "a",encoding='iso-8859-1') as out: #append
-             for row in item['lineDict']:
+        with open(item['fileName'], "a",encoding='iso-8859-1') as out: #append
+            for row in item['lineDict']:
                 out.write(row)
         return item
