@@ -37,16 +37,6 @@
 ,,,Split,106,28,3,1,0,3,1,1,0,.179,.286,.107,.200
 ,,,Knuckler,23,10,1,0,0,3,0,0,0,.300,.300,.000,.333
 ,,,Slow Curve,3,1,0,0,0,0,0,0,0,.000,.000,.000,.000
-!NEW_PLAYER!,http://www.brooksbaseball.net/h_tabs.php?player=424325&balls=-1&strikes=-1&b_hand=-1&time=month&minmax=ci&var=ra&s_type=2&gFilt=&startDate=&endDate=,David Ross,Pitch Type,Count,AB,K,BB,HBP,1B,2B,3B,HR,BAA,SLG,ISO,BABIP
-,,,Fourseam,2645,516,182,87,3,69,26,1,20,.225,.395,.171,.306
-,,,Sinker,1411,293,55,46,1,59,19,0,14,.314,.522,.208,.348
-,,,Change,554,127,39,10,0,18,10,0,7,.276,.520,.244,.346
-,,,Slider,967,236,96,18,0,25,9,0,5,.165,.267,.102,.252
-,,,Curve,578,111,49,5,0,10,7,0,3,.180,.324,.144,.288
-,,,Cutter,518,104,32,13,0,10,6,1,3,.192,.356,.164,.246
-,,,Split,91,17,8,4,0,1,1,0,0,.118,.177,.059,.222
-,,,Knuckler,35,12,3,1,0,2,0,0,0,.167,.167,.000,.222
-,,,Slow Curve,3,2,1,0,0,0,0,0,0,.000,.000,.000,.000
 !NEW_PLAYER!,http://www.brooksbaseball.net/h_tabs.php?player=134181&balls=-1&strikes=-1&b_hand=-1&time=month&minmax=ci&var=ra&s_type=2&gFilt=&startDate=&endDate=,Adrian Beltre,Pitch Type,Count,AB,K,BB,HBP,1B,2B,3B,HR,BAA,SLG,ISO,BABIP
 ,,,Fourseam,8525,2201,259,155,17,416,144,7,110,.308,.529,.222,.310
 ,,,Sinker,5366,1379,101,87,17,301,92,0,58,.327,.520,.193,.322
@@ -58,14 +48,16 @@
 ,,,Knuckler,121,31,7,3,0,3,0,0,1,.129,.226,.097,.130
 ,,,Screwball,3,2,0,0,0,0,0,0,0,.000,.000,.000,.000
 ,,,Slow Curve,13,5,3,0,1,0,0,0,0,.000,.000,.000,.000
-!NEW_PLAYER!,http://www.brooksbaseball.net/h_tabs.php?player=112526&balls=-1&strikes=-1&b_hand=-1&time=month&minmax=ci&var=ra&s_type=2&gFilt=&startDate=&endDate=,Bartolo Colon,Pitch Type,Count,AB,K,BB,HBP,1B,2B,3B,HR,BAA,SLG,ISO,BABIP
-,,,Fourseam,372,79,26,1,1,5,2,0,1,.101,.165,.063,.135
-,,,Sinker,211,49,22,0,0,4,1,0,0,.102,.122,.020,.185
-,,,Change,17,6,6,0,0,0,0,0,0,.000,.000,.000,.000
-,,,Slider,74,29,22,0,0,1,0,0,0,.035,.035,.000,.143
-,,,Curve,65,29,26,0,0,0,0,0,0,.000,.000,.000,.000
-,,,Cutter,17,7,2,0,0,0,1,0,0,.143,.286,.143,.200
-,,,Split,2,1,1,0,0,0,0,0,0,.000,.000,.000,.000
+!NEW_PLAYER!,http://www.brooksbaseball.net/h_tabs.php?player=424325&balls=-1&strikes=-1&b_hand=-1&time=month&minmax=ci&var=ra&s_type=2&gFilt=&startDate=&endDate=,David Ross,Pitch Type,Count,AB,K,BB,HBP,1B,2B,3B,HR,BAA,SLG,ISO,BABIP
+,,,Fourseam,2645,516,182,87,3,69,26,1,20,.225,.395,.171,.306
+,,,Sinker,1411,293,55,46,1,59,19,0,14,.314,.522,.208,.348
+,,,Change,554,127,39,10,0,18,10,0,7,.276,.520,.244,.346
+,,,Slider,967,236,96,18,0,25,9,0,5,.165,.267,.102,.252
+,,,Curve,578,111,49,5,0,10,7,0,3,.180,.324,.144,.288
+,,,Cutter,518,104,32,13,0,10,6,1,3,.192,.356,.164,.246
+,,,Split,91,17,8,4,0,1,1,0,0,.118,.177,.059,.222
+,,,Knuckler,35,12,3,1,0,2,0,0,0,.167,.167,.000,.222
+,,,Slow Curve,3,2,1,0,0,0,0,0,0,.000,.000,.000,.000
 !NEW_PLAYER!,http://www.brooksbaseball.net/h_tabs.php?player=346795&balls=-1&strikes=-1&b_hand=-1&time=month&minmax=ci&var=ra&s_type=2&gFilt=&startDate=&endDate=,Endy Chavez,Pitch Type,Count,AB,K,BB,HBP,1B,2B,3B,HR,BAA,SLG,ISO,BABIP
 ,,,Fourseam,2007,423,33,37,1,88,29,3,9,.305,.452,.147,.315
 ,,,Sinker,1373,362,19,16,0,90,13,2,0,.290,.337,.047,.306
@@ -76,6 +68,14 @@
 ,,,Split,119,34,7,1,0,6,1,0,0,.206,.235,.029,.259
 ,,,Knuckler,24,8,1,1,0,0,0,0,0,.000,.000,.000,.000
 ,,,Slow Curve,10,2,0,0,0,0,0,0,0,.000,.000,.000,.000
+!NEW_PLAYER!,http://www.brooksbaseball.net/h_tabs.php?player=112526&balls=-1&strikes=-1&b_hand=-1&time=month&minmax=ci&var=ra&s_type=2&gFilt=&startDate=&endDate=,Bartolo Colon,Pitch Type,Count,AB,K,BB,HBP,1B,2B,3B,HR,BAA,SLG,ISO,BABIP
+,,,Fourseam,372,79,26,1,1,5,2,0,1,.101,.165,.063,.135
+,,,Sinker,211,49,22,0,0,4,1,0,0,.102,.122,.020,.185
+,,,Change,17,6,6,0,0,0,0,0,0,.000,.000,.000,.000
+,,,Slider,74,29,22,0,0,1,0,0,0,.035,.035,.000,.143
+,,,Curve,65,29,26,0,0,0,0,0,0,.000,.000,.000,.000
+,,,Cutter,17,7,2,0,0,0,1,0,0,.143,.286,.143,.200
+,,,Split,2,1,1,0,0,0,0,0,0,.000,.000,.000,.000
 !NEW_PLAYER!,http://www.brooksbaseball.net/h_tabs.php?player=150275&balls=-1&strikes=-1&b_hand=-1&time=month&minmax=ci&var=ra&s_type=2&gFilt=&startDate=&endDate=,Yorvit Torrealba,Pitch Type,Count,AB,K,BB,HBP,1B,2B,3B,HR,BAA,SLG,ISO,BABIP
 ,,,Fourseam,2642,598,70,72,6,124,42,2,16,.308,.465,.157,.328
 ,,,Sinker,1482,373,36,32,5,74,31,1,4,.295,.416,.121,.318
